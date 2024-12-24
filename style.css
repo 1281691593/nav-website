@@ -146,9 +146,15 @@ h2::before {
 .link-card img {
     width: 32px;
     height: 32px;
-    margin-right: 1rem;
-    border-radius: 8px;
-    filter: drop-shadow(0 0 5px rgba(0, 255, 136, 0.3));
+    object-fit: contain;
+    margin-bottom: 8px;
+    filter: brightness(0.9);
+    transition: all 0.3s ease;
+}
+
+.link-card:hover img {
+    filter: brightness(1);
+    transform: scale(1.1);
 }
 
 .link-card span {
