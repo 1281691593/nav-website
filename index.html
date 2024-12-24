@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>购物星球</title>
+    <title>购物星球 - 你的购物导航</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,199 +14,117 @@
             </div>
             <div class="nav-right">
                 <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
                     <input type="text" id="searchInput" placeholder="搜索商城">
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <div class="sidebar">
-            <div class="sidebar-section">
-                <h3>分类</h3>
-                <ul>
-                    <li><a href="#comprehensive" class="active">综合购物</a></li>
-                    <li><a href="#specialty">特色购物</a></li>
-                    <li><a href="#electronics">电器数码</a></li>
-                    <li><a href="#fresh">生鲜超市</a></li>
-                </ul>
+    <nav class="categories-nav">
+        <div class="category-item active" data-category="comprehensive">
+            综合购物
+            <div class="subcategories">
+                <div class="subcategory" data-subcategory="general">综合商城</div>
+                <div class="subcategory" data-subcategory="groupBuy">团购优惠</div>
+                <div class="subcategory" data-subcategory="brand">品牌特卖</div>
             </div>
         </div>
+        <div class="category-item" data-category="specialty">
+            特色购物
+            <div class="subcategories">
+                <div class="subcategory" data-subcategory="lifestyle">生活分享</div>
+                <div class="subcategory" data-subcategory="luxury">品牌折扣</div>
+            </div>
+        </div>
+        <div class="category-item" data-category="digital">
+            电器数码
+            <div class="subcategories">
+                <div class="subcategory" data-subcategory="electronics">数码电器</div>
+                <div class="subcategory" data-subcategory="computer">电脑配件</div>
+            </div>
+        </div>
+        <div class="category-item" data-category="supermarket">
+            生鲜超市
+            <div class="subcategories">
+                <div class="subcategory" data-subcategory="fresh">生鲜食品</div>
+                <div class="subcategory" data-subcategory="daily">日用百货</div>
+            </div>
+        </div>
+    </nav>
 
-        <div class="content">
-            <section id="comprehensive" class="category">
-                <h2>综合购物平台</h2>
-                <div class="links">
-                    <a href="https://www.taobao.com" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://www.taobao.com/favicon.ico" alt="淘宝">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">淘宝网</span>
-                            <span class="description">综合性购物平台</span>
-                        </div>
-                    </a>
-                    <a href="https://www.jd.com" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://www.jd.com/favicon.ico" alt="京东">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">京东商城</span>
-                            <span class="description">综合电商平台</span>
-                        </div>
-                    </a>
-                    <a href="https://www.pinduoduo.com" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://cdn.pinduoduo.com/assets/img/pdd_logo_v2.png" alt="拼多多">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">拼多多</span>
-                            <span class="description">主打性价比</span>
-                        </div>
-                    </a>
-                    <a href="https://www.tmall.com" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://www.tmall.com/favicon.ico" alt="天猫">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">天猫商城</span>
-                            <span class="description">品牌购物中心</span>
-                        </div>
-                    </a>
+    <main class="content">
+        <div class="platform-grid" data-category="comprehensive" data-subcategory="general">
+            <a href="https://www.taobao.com" class="platform-card">
+                <div class="platform-image">
+                    <img src="assets/taobao.png" alt="淘宝网">
                 </div>
-            </section>
+                <div class="platform-info">
+                    <h3>淘宝网</h3>
+                    <p>综合性购物平台</p>
+                </div>
+            </a>
+            <a href="https://www.jd.com" class="platform-card">
+                <div class="platform-image">
+                    <img src="assets/jd.png" alt="京东商城">
+                </div>
+                <div class="platform-info">
+                    <h3>京东商城</h3>
+                    <p>综合性电商平台</p>
+                </div>
+            </a>
+        </div>
 
-            <section id="specialty" class="category">
-                <h2>特色购物平台</h2>
-                <div class="links">
-                    <a href="https://www.xiaohongshu.com" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://www.xiaohongshu.com/favicon.ico" alt="小红书">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">小红书</span>
-                            <span class="description">生活分享社区</span>
-                        </div>
-                    </a>
-                    <a href="https://www.vip.com" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://www.vip.com/favicon.ico" alt="唯品会">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">唯品会</span>
-                            <span class="description">品牌特卖</span>
-                        </div>
-                    </a>
-                    <a href="https://you.163.com" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://you.163.com/favicon.ico" alt="网易严选">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">网易严选</span>
-                            <span class="description">品质生活</span>
-                        </div>
-                    </a>
-                    <a href="https://www.dewu.com" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://cdn.poizon.com/node-common/R3JvdXAlMjA2QDN4MTU5MjIyMjY4OTE0Mw==.png" alt="得物">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">得物</span>
-                            <span class="description">潮流运动</span>
-                        </div>
-                    </a>
+        <div class="platform-grid" data-category="comprehensive" data-subcategory="groupBuy">
+            <a href="https://www.pinduoduo.com" class="platform-card">
+                <div class="platform-image">
+                    <img src="assets/pdd.png" alt="拼多多">
                 </div>
-            </section>
+                <div class="platform-info">
+                    <h3>拼多多</h3>
+                    <p>主打性价比</p>
+                </div>
+            </a>
+        </div>
 
-            <section id="electronics" class="category">
-                <h2>电器数码</h2>
-                <div class="links">
-                    <a href="https://www.suning.com" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://www.suning.com/favicon.ico" alt="苏宁易购">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">苏宁易购</span>
-                            <span class="description">电器商城</span>
-                        </div>
-                    </a>
-                    <a href="https://www.gome.com.cn" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://www.gome.com.cn/favicon.ico" alt="国美">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">国美电器</span>
-                            <span class="description">家电零售</span>
-                        </div>
-                    </a>
-                    <a href="https://www.mi.com" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://www.mi.com/favicon.ico" alt="小米商城">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">小米商城</span>
-                            <span class="description">智能生活</span>
-                        </div>
-                    </a>
-                    <a href="https://www.huawei.com/cn" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://www.huawei.com/favicon.ico" alt="华为商城">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">华为商城</span>
-                            <span class="description">科技产品</span>
-                        </div>
-                    </a>
+        <div class="platform-grid" data-category="comprehensive" data-subcategory="brand">
+            <a href="https://www.tmall.com" class="platform-card">
+                <div class="platform-image">
+                    <img src="assets/tmall.png" alt="天猫商城">
                 </div>
-            </section>
+                <div class="platform-info">
+                    <h3>天猫商城</h3>
+                    <p>品牌购物中心</p>
+                </div>
+            </a>
+        </div>
 
-            <section id="fresh" class="category">
-                <h2>生鲜超市</h2>
-                <div class="links">
-                    <a href="https://www.meituan.com" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://www.meituan.com/favicon.ico" alt="美团">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">美团</span>
-                            <span class="description">生活服务</span>
-                        </div>
-                    </a>
-                    <a href="https://www.ele.me" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://www.ele.me/favicon.ico" alt="饿了么">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">饿了么</span>
-                            <span class="description">外卖平台</span>
-                        </div>
-                    </a>
-                    <a href="https://www.dingdongmaicai.com" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://img.ddimg.mobi/assets/img/logo-black.png" alt="叮咚买菜">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">叮咚买菜</span>
-                            <span class="description">生鲜配送</span>
-                        </div>
-                    </a>
-                    <a href="https://www.hema.com" target="_blank" class="link-card">
-                        <div class="card-image">
-                            <img src="https://www.hema.com/favicon.ico" alt="盒马">
-                        </div>
-                        <div class="card-info">
-                            <span class="title">盒马</span>
-                            <span class="description">新零售</span>
-                        </div>
-                    </a>
+        <div class="platform-grid" data-category="specialty" data-subcategory="lifestyle">
+            <a href="https://www.xiaohongshu.com" class="platform-card">
+                <div class="platform-image">
+                    <img src="assets/xhs.png" alt="小红书">
                 </div>
-            </section>
+                <div class="platform-info">
+                    <h3>小红书</h3>
+                    <p>生活分享社区</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="platform-grid" data-category="specialty" data-subcategory="luxury">
+            <a href="https://www.vip.com" class="platform-card">
+                <div class="platform-image">
+                    <img src="assets/vip.png" alt="唯品会">
+                </div>
+                <div class="platform-info">
+                    <h3>唯品会</h3>
+                    <p>品牌特卖</p>
+                </div>
+            </a>
         </div>
     </main>
-
-    <footer>
-        <p> 2024 购物星球 | 探索品质生活</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
