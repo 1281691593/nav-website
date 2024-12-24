@@ -8,104 +8,204 @@
 </head>
 <body>
     <header>
-        <h1>购物星球</h1>
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="搜索网站...">
-        </div>
+        <nav class="epic-nav">
+            <div class="nav-left">
+                <h1>购物星球</h1>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="搜索商城">
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <section class="category">
-            <h2>综合购物平台</h2>
-            <div class="links">
-                <a href="https://www.taobao.com" target="_blank" class="link-card">
-                    <img src="https://www.taobao.com/favicon.ico" alt="淘宝">
-                    <span>淘宝网</span>
-                </a>
-                <a href="https://www.jd.com" target="_blank" class="link-card">
-                    <img src="https://www.jd.com/favicon.ico" alt="京东">
-                    <span>京东商城</span>
-                </a>
-                <a href="https://www.pinduoduo.com" target="_blank" class="link-card">
-                    <img src="https://cdn.pinduoduo.com/assets/img/pdd_logo_v2.png" alt="拼多多">
-                    <span>拼多多</span>
-                </a>
-                <a href="https://www.tmall.com" target="_blank" class="link-card">
-                    <img src="https://www.tmall.com/favicon.ico" alt="天猫">
-                    <span>天猫商城</span>
-                </a>
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <h3>分类</h3>
+                <ul>
+                    <li><a href="#comprehensive" class="active">综合购物</a></li>
+                    <li><a href="#specialty">特色购物</a></li>
+                    <li><a href="#electronics">电器数码</a></li>
+                    <li><a href="#fresh">生鲜超市</a></li>
+                </ul>
             </div>
-        </section>
+        </div>
 
-        <section class="category">
-            <h2>特色购物平台</h2>
-            <div class="links">
-                <a href="https://www.xiaohongshu.com" target="_blank" class="link-card">
-                    <img src="https://www.xiaohongshu.com/favicon.ico" alt="小红书">
-                    <span>小红书</span>
-                </a>
-                <a href="https://www.vip.com" target="_blank" class="link-card">
-                    <img src="https://www.vip.com/favicon.ico" alt="唯品会">
-                    <span>唯品会</span>
-                </a>
-                <a href="https://you.163.com" target="_blank" class="link-card">
-                    <img src="https://you.163.com/favicon.ico" alt="网易严选">
-                    <span>网易严选</span>
-                </a>
-                <a href="https://www.dewu.com" target="_blank" class="link-card">
-                    <img src="https://cdn.poizon.com/node-common/R3JvdXAlMjA2QDN4MTU5MjIyMjY4OTE0Mw==.png" alt="得物">
-                    <span>得物</span>
-                </a>
-            </div>
-        </section>
+        <div class="content">
+            <section id="comprehensive" class="category">
+                <h2>综合购物平台</h2>
+                <div class="links">
+                    <a href="https://www.taobao.com" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://www.taobao.com/favicon.ico" alt="淘宝">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">淘宝网</span>
+                            <span class="description">综合性购物平台</span>
+                        </div>
+                    </a>
+                    <a href="https://www.jd.com" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://www.jd.com/favicon.ico" alt="京东">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">京东商城</span>
+                            <span class="description">综合电商平台</span>
+                        </div>
+                    </a>
+                    <a href="https://www.pinduoduo.com" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://cdn.pinduoduo.com/assets/img/pdd_logo_v2.png" alt="拼多多">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">拼多多</span>
+                            <span class="description">主打性价比</span>
+                        </div>
+                    </a>
+                    <a href="https://www.tmall.com" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://www.tmall.com/favicon.ico" alt="天猫">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">天猫商城</span>
+                            <span class="description">品牌购物中心</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
 
-        <section class="category">
-            <h2>电器数码</h2>
-            <div class="links">
-                <a href="https://www.suning.com" target="_blank" class="link-card">
-                    <img src="https://www.suning.com/favicon.ico" alt="苏宁易购">
-                    <span>苏宁易购</span>
-                </a>
-                <a href="https://www.gome.com.cn" target="_blank" class="link-card">
-                    <img src="https://www.gome.com.cn/favicon.ico" alt="国美">
-                    <span>国美电器</span>
-                </a>
-                <a href="https://www.mi.com" target="_blank" class="link-card">
-                    <img src="https://www.mi.com/favicon.ico" alt="小米商城">
-                    <span>小米商城</span>
-                </a>
-                <a href="https://www.huawei.com/cn" target="_blank" class="link-card">
-                    <img src="https://www.huawei.com/favicon.ico" alt="华为商城">
-                    <span>华为商城</span>
-                </a>
-            </div>
-        </section>
+            <section id="specialty" class="category">
+                <h2>特色购物平台</h2>
+                <div class="links">
+                    <a href="https://www.xiaohongshu.com" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://www.xiaohongshu.com/favicon.ico" alt="小红书">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">小红书</span>
+                            <span class="description">生活分享社区</span>
+                        </div>
+                    </a>
+                    <a href="https://www.vip.com" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://www.vip.com/favicon.ico" alt="唯品会">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">唯品会</span>
+                            <span class="description">品牌特卖</span>
+                        </div>
+                    </a>
+                    <a href="https://you.163.com" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://you.163.com/favicon.ico" alt="网易严选">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">网易严选</span>
+                            <span class="description">品质生活</span>
+                        </div>
+                    </a>
+                    <a href="https://www.dewu.com" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://cdn.poizon.com/node-common/R3JvdXAlMjA2QDN4MTU5MjIyMjY4OTE0Mw==.png" alt="得物">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">得物</span>
+                            <span class="description">潮流运动</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
 
-        <section class="category">
-            <h2>生鲜超市</h2>
-            <div class="links">
-                <a href="https://www.meituan.com" target="_blank" class="link-card">
-                    <img src="https://www.meituan.com/favicon.ico" alt="美团">
-                    <span>美团</span>
-                </a>
-                <a href="https://www.ele.me" target="_blank" class="link-card">
-                    <img src="https://www.ele.me/favicon.ico" alt="饿了么">
-                    <span>饿了么</span>
-                </a>
-                <a href="https://www.dingdongmaicai.com" target="_blank" class="link-card">
-                    <img src="https://img.ddimg.mobi/assets/img/logo-black.png" alt="叮咚买菜">
-                    <span>叮咚买菜</span>
-                </a>
-                <a href="https://www.hema.com" target="_blank" class="link-card">
-                    <img src="https://www.hema.com/favicon.ico" alt="盒马">
-                    <span>盒马</span>
-                </a>
-            </div>
-        </section>
+            <section id="electronics" class="category">
+                <h2>电器数码</h2>
+                <div class="links">
+                    <a href="https://www.suning.com" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://www.suning.com/favicon.ico" alt="苏宁易购">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">苏宁易购</span>
+                            <span class="description">电器商城</span>
+                        </div>
+                    </a>
+                    <a href="https://www.gome.com.cn" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://www.gome.com.cn/favicon.ico" alt="国美">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">国美电器</span>
+                            <span class="description">家电零售</span>
+                        </div>
+                    </a>
+                    <a href="https://www.mi.com" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://www.mi.com/favicon.ico" alt="小米商城">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">小米商城</span>
+                            <span class="description">智能生活</span>
+                        </div>
+                    </a>
+                    <a href="https://www.huawei.com/cn" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://www.huawei.com/favicon.ico" alt="华为商城">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">华为商城</span>
+                            <span class="description">科技产品</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section id="fresh" class="category">
+                <h2>生鲜超市</h2>
+                <div class="links">
+                    <a href="https://www.meituan.com" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://www.meituan.com/favicon.ico" alt="美团">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">美团</span>
+                            <span class="description">生活服务</span>
+                        </div>
+                    </a>
+                    <a href="https://www.ele.me" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://www.ele.me/favicon.ico" alt="饿了么">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">饿了么</span>
+                            <span class="description">外卖平台</span>
+                        </div>
+                    </a>
+                    <a href="https://www.dingdongmaicai.com" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://img.ddimg.mobi/assets/img/logo-black.png" alt="叮咚买菜">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">叮咚买菜</span>
+                            <span class="description">生鲜配送</span>
+                        </div>
+                    </a>
+                    <a href="https://www.hema.com" target="_blank" class="link-card">
+                        <div class="card-image">
+                            <img src="https://www.hema.com/favicon.ico" alt="盒马">
+                        </div>
+                        <div class="card-info">
+                            <span class="title">盒马</span>
+                            <span class="description">新零售</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p> 2024 购物星球 | 探索无限购物世界</p>
+        <p> 2024 购物星球 | 探索品质生活</p>
     </footer>
 
     <script src="script.js"></script>
